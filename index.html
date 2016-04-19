@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SPI QA/QC Portal</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="../assets/js/plugins/ui/drilldown.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="../assets/js/core/app.js"></script>
+	<script type="text/javascript" src="../assets/js/pages/layout_sidebar_sticky_custom.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse bg-teal">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/image.png" alt="">
+						<span>User Name</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+	<!-- Second navbar -->
+	<div class="navbar navbar-default" id="navbar-second">
+		<ul class="nav navbar-nav no-border visible-xs-block">
+			<li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse" id="navbar-second-toggle">
+			<ul class="nav navbar-nav">
+				<li>
+					<a class="sidebar-control sidebar-main-toggle hidden-xs">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+				<li><a href="../index.html"><i class="icon-display4 position-left"></i> Dashboard</a></li>
+
+				<li class="dropdown mega-menu mega-menu-wide">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Supporting Tables<span class="caret"></span></a>
+
+					<div class="dropdown-menu dropdown-content">
+						<div class="dropdown-content-body">
+							<div class="row">
+
+								<div class="col-md-3">
+									<span class="menu-heading underlined">Wiring</span>
+									<ul class="menu-list">
+										<li><a href="#">Panels</a></li>
+										<li>
+											<a href="#">Cables</a>
+											<ul>
+												<li><a href="#">Cable Types</a></li>
+												<li><a href="#">Default Cables</a></li>
+												<li><a href="#">Connectors</a></li>
+												<li><a href="#">Schedule</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Drums</a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-3">
+									<span class="menu-heading underlined">Specifications</span>
+									<ul class="menu-list">
+										<li>
+											<a href="#">Flow</a>
+											<ul>
+												<li><a href="#">546-Flow Orifice</a></li>
+												<li><a href="#">556-Flow Transmitter</a></li>
+												<li><a href="#">557-Vortex Transmitter</a></li>
+												<li><a href="#">558-Flow Element</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Pressure</a>
+											<ul>
+												<li><a href="#">546-Flow Orifice</a></li>
+												<li><a href="#">556-Flow Transmitter</a></li>
+												<li><a href="#">557-Vortex Transmitter</a></li>
+												<li><a href="#">558-Flow Element</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Temperature</a>
+											<ul>
+												<li><a href="#">546-Flow Orifice</a></li>
+												<li><a href="#">556-Flow Transmitter</a></li>
+												<li><a href="#">557-Vortex Transmitter</a></li>
+												<li><a href="#">558-Flow Element</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Level</a>
+											<ul>
+												<li><a href="#">546-Flow Orifice</a></li>
+												<li><a href="#">556-Flow Transmitter</a></li>
+												<li><a href="#">557-Vortex Transmitter</a></li>
+												<li><a href="#">558-Flow Element</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-md-3">
+									<span class="menu-heading underlined">Documents</span>
+									<ul class="menu-list">
+										<li><a href="#">Document Names</a></li>
+										<li><a href="#">Generated Docs</a></li>
+										<li><a href="#">Installation Index</a></li>
+									</ul>
+								</div>
+
+								<div class="col-md-3">
+									<span class="menu-heading underlined"></span>
+									<ul class="menu-list">
+										<li><a href="#"></a></li>
+										<li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Reports <span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu width-200">
+						<li class="dropdown-header">Reports 1</li>
+						<li class="dropdown-submenu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i> Columns</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header highlight">Assigned</li>
+								<li><a href="1_col.html">Loops</a></li>
+								<li><a href="2_col.html">Data Sheets</a></li>
+								<li class="dropdown-submenu">
+									<a href="#"></a>
+									<ul class="dropdown-menu">
+										<li class="dropdown-header highlight">Invalid Assignments</li>
+										<li><a href="3_col_dual.html">Outstanding</a></li>
+										<li><a href="3_col_double.html">Valid</a></li>
+									</ul>
+								</li>
+								<li><a href="4_col.html">Lines</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-paragraph-justify3"></i> Reports 2</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header highlight">Data Report</li>
+								<li><a href="#">Chart Report</a></li>
+								<li><a href="#">Pie Chart Report</a></li>
+								<li><a href="#">Data Grid Report</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-header">User Reports</li>
+						<li><a href="layout_boxed.html"><i class="icon-align-center-horizontal"></i>User Defined</a></li>
+						<li class="active"><a href="layout_sidebar_sticky.html"><i class="icon-flip-vertical3"></i>User Defined 2</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-cog3"></i>
+						<span class="visible-xs-inline-block position-right">Dropdown</span>
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#">Page Settings</a></li>
+						<li><a href="#">Theme</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Pallette</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /second navbar -->
+
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="page-header-content">
+			<div class="page-title">
+				<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Starters</span> - Sticky Sidebar</h4>
+
+				<ul class="breadcrumb breadcrumb-caret position-right">
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+
+</body>
+</html>
